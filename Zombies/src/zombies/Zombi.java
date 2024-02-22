@@ -1,12 +1,12 @@
 package zombies;
 
-	public class ZombiePadre {
+	public class Zombi {
 		//Atributos 
 	  	private int vida;
 	    private int velocidad;
 
 	    // Constructor
-	    public ZombiePadre(int vida, int velocidad) {
+	    public Zombi(int vida, int velocidad) {
 	        this.vida = vida;
 	        this.velocidad = velocidad;
 	    }
@@ -21,7 +21,7 @@ package zombies;
 	    }
 
 	    // Método para atacar a otro zombi
-	    public void atacar(ZombiePadre otroZombi) {
+	    public void atacar(Zombi otroZombi) {
 	        // Supongamos que el daño es proporcional a la velocidad del zombi atacante
 	        int daño = this.velocidad;
 	        otroZombi.recibirdaño(daño);
